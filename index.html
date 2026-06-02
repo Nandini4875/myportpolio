@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nandini Chavan | Secondary Teacher</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo">Nandini Chavan.</a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#certificates" class="nav-link">Certificates</a></li>
+        <li><a href="#achievements" class="nav-link">Achievements</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero" id="home">
+    <div class="hero-content">
+      <p class="hero-greeting">Hello, I'm</p>
+      <h1 class="hero-name">Nandini Chavan</h1>
+      <h2 class="hero-role">Secondary Teacher</h2>
+      <p class="hero-tagline">Inspiring the next generation through passionate, evidence-based education.</p>
+      <div class="hero-cta">
+        <a href="#certificates" class="btn btn-primary">View Certificates</a>
+        <a href="#contact" class="btn btn-outline">Get in Touch</a>
+      </div>
+    </div>
+    <div class="hero-avatar">
+      <div class="avatar-placeholder">
+        <span>NC</span>
+      </div>
+    </div>
+    <div class="hero-scroll">
+      <span>Scroll down</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT ===== -->
+  <section class="section" id="about">
+    <div class="container">
+      <h2 class="section-title">About <span>Me</span></h2>
+      <div class="about-grid">
+        <div class="about-text">
+          <p>I am a dedicated Secondary School Teacher with a passion for creating engaging and inclusive learning environments. My teaching philosophy centres on critical thinking, curiosity, and building lasting academic foundations.</p>
+          <p>With years of classroom experience, I bring enthusiasm and evidence-based strategies to every lesson, ensuring each student can reach their fullest potential.</p>
+          <div class="about-stats">
+            <div class="stat">
+              <span class="stat-number">8+</span>
+              <span class="stat-label">Years Teaching</span>
+            </div>
+            <div class="stat">
+              <span class="stat-number">500+</span>
+              <span class="stat-label">Students Taught</span>
+            </div>
+            <div class="stat">
+              <span class="stat-number">12+</span>
+              <span class="stat-label">Certifications</span>
+            </div>
+          </div>
+        </div>
+        <div class="about-card">
+          <h3>Quick Info</h3>
+          <ul class="info-list">
+            <li><span class="info-label">Name</span><span>Nandini Chavan</span></li>
+            <li><span class="info-label">Role</span><span>Secondary Teacher</span></li>
+            <li><span class="info-label">Subjects</span><span>Mathematics &amp; Science</span></li>
+            <li><span class="info-label">Location</span><span>Australia</span></li>
+            <li><span class="info-label">Languages</span><span>English</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SKILLS ===== -->
+  <section class="section section-alt" id="skills">
+    <div class="container">
+      <h2 class="section-title">Skills &amp; <span>Expertise</span></h2>
+      <div class="skills-grid">
+        <div class="skill-card">
+          <div class="skill-icon">📚</div>
+          <h3>Curriculum Design</h3>
+          <p>Developing engaging lesson plans aligned with national standards and student needs.</p>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon">🎯</div>
+          <h3>Classroom Management</h3>
+          <p>Creating positive, structured environments where every student thrives.</p>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon">💻</div>
+          <h3>EdTech Integration</h3>
+          <p>Leveraging digital tools and platforms to enhance learning outcomes.</p>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon">📊</div>
+          <h3>Student Assessment</h3>
+          <p>Designing formative and summative assessments to track and improve progress.</p>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon">🤝</div>
+          <h3>Mentoring</h3>
+          <p>Supporting student wellbeing and academic development through mentorship programs.</p>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon">🔬</div>
+          <h3>STEM Education</h3>
+          <p>Delivering high-quality Mathematics and Science instruction for secondary students.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CERTIFICATES ===== -->
+  <section class="section" id="certificates">
+    <div class="container">
+      <h2 class="section-title">Certificates &amp; <span>Qualifications</span></h2>
+      <p class="section-subtitle">Formal qualifications and professional development certifications.</p>
+
+      <!-- Lock / Unlock bar -->
+      <div class="cert-lock-bar">
+        <div class="cert-lock-status" id="certLockStatus">
+          <span class="lock-icon">🔒</span>
+          <span id="lockStatusText">Certificates are hidden</span>
+        </div>
+        <button class="btn btn-outline lock-toggle-btn" id="lockToggleBtn" onclick="handleLockToggle()">
+          🔓 Unlock to View
+        </button>
+      </div>
+
+      <!-- PIN Modal -->
+      <div class="pin-modal" id="pinModal">
+        <div class="pin-box">
+          <div class="pin-icon">🔐</div>
+          <h3>Enter PIN to unlock</h3>
+          <p>Certificates are protected. Enter your PIN to view them.</p>
+          <div class="pin-inputs" id="pinInputs">
+            <input type="password" class="pin-digit" maxlength="1" inputmode="numeric" />
+            <input type="password" class="pin-digit" maxlength="1" inputmode="numeric" />
+            <input type="password" class="pin-digit" maxlength="1" inputmode="numeric" />
+            <input type="password" class="pin-digit" maxlength="1" inputmode="numeric" />
+          </div>
+          <p class="pin-error" id="pinError"></p>
+          <div class="pin-actions">
+            <button class="btn btn-primary" onclick="verifyPin()">Unlock</button>
+            <button class="btn btn-outline" onclick="closePinModal()">Cancel</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="filter-bar" id="certFilterBar" style="display:none">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="science">Science</button>
+        <button class="filter-btn" data-filter="mathematics">Mathematics</button>
+        <button class="filter-btn" data-filter="edtech">EdTech</button>
+      </div>
+
+      <div class="cert-grid cert-grid-locked" id="certGrid">
+
+        <div class="cert-card photo-card" data-category="science" onclick="openLightbox('photots/f6.png', 'Stamens &amp; Pistil', 'Science Teaching Resource', '2026')">
+          <div class="cert-badge science">SCIENCE</div>
+          <div class="cert-img-wrap">
+            <img src="photots/f6.png" alt="Stamens and Pistil" class="cert-photo" />
+            <div class="cert-img-overlay"><span>🔍 View Full</span></div>
+          </div>
+          <h3>Stamens &amp; Pistil</h3>
+          <p class="cert-issuer">Science Teaching Resource</p>
+          <p class="cert-year">2026</p>
+          <div class="cert-tags">
+            <span class="tag">Biology</span>
+            <span class="tag">Plant Science</span>
+          </div>
+        </div>
+
+        <div class="cert-card photo-card" data-category="mathematics" onclick="openLightbox('photots/WhatsApp%20Image%202026-02-24%20at%2012.28.39%20PM.jpeg', 'Fractions Operations', 'Mathematics Teaching Resource', '2026')">
+          <div class="cert-badge mathematics">MATHEMATICS</div>
+          <div class="cert-img-wrap">
+            <img src="photots/WhatsApp Image 2026-02-24 at 12.28.39 PM.jpeg" alt="Fractions Operations" class="cert-photo" />
+            <div class="cert-img-overlay"><span>🔍 View Full</span></div>
+          </div>
+          <h3>Fractions Operations</h3>
+          <p class="cert-issuer">Mathematics Teaching Resource</p>
+          <p class="cert-year">2026</p>
+          <div class="cert-tags">
+            <span class="tag">Multiplication</span>
+            <span class="tag">Division</span>
+          </div>
+        </div>
+
+        <div class="cert-card photo-card" data-category="edtech" onclick="openLightbox('photots/Media.jpg', 'EdTech Equipment', 'Digital Learning Resource', '2026')">
+          <div class="cert-badge edtech">EDTECH</div>
+          <div class="cert-img-wrap">
+            <img src="photots/Media.jpg" alt="EdTech Equipment" class="cert-photo" />
+            <div class="cert-img-overlay"><span>🔍 View Full</span></div>
+          </div>
+          <h3>EdTech Equipment</h3>
+          <p class="cert-issuer">Digital Learning Resource</p>
+          <p class="cert-year">2026</p>
+          <div class="cert-tags">
+            <span class="tag">EdTech</span>
+            <span class="tag">Digital Tools</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== LIGHTBOX ===== -->
+  <div class="lightbox" id="lightbox" onclick="closeLightbox()">
+    <button class="lightbox-close" onclick="closeLightbox()" aria-label="Close">&times;</button>
+    <div class="lightbox-inner" onclick="event.stopPropagation()">
+      <img src="" alt="" id="lightboxImg" />
+      <div class="lightbox-info">
+        <h3 id="lightboxTitle"></h3>
+        <p id="lightboxIssuer"></p>
+        <span id="lightboxYear" class="timeline-year"></span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== ACHIEVEMENTS ===== -->
+  <section class="section section-alt" id="achievements">
+    <div class="container">
+      <h2 class="section-title">Achievements &amp; <span>Awards</span></h2>
+      <p class="section-subtitle">Recognition and milestones throughout my teaching career.</p>
+      <div class="timeline">
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-year">2025</span>
+            <h3>Teacher of the Year Award</h3>
+            <p class="timeline-org">Western District Schools Council</p>
+            <p>Recognised for outstanding contribution to student outcomes and innovative teaching methodologies in secondary education.</p>
+            <span class="achievement-tag">🏆 Award</span>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-year">2024</span>
+            <h3>STEM Program Lead</h3>
+            <p class="timeline-org">Greenfield Secondary College</p>
+            <p>Launched a school-wide STEM enrichment program that increased student participation in Science and Mathematics by 40%.</p>
+            <span class="achievement-tag">🚀 Program</span>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-year">2023</span>
+            <h3>Published Research Paper</h3>
+            <p class="timeline-org">Australian Journal of Education</p>
+            <p>Co-authored a peer-reviewed paper on differentiated instruction strategies for diverse secondary classrooms.</p>
+            <span class="achievement-tag">📝 Publication</span>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-year">2022</span>
+            <h3>Excellence in Digital Learning</h3>
+            <p class="timeline-org">Victorian Department of Education</p>
+            <p>Awarded for exceptional integration of technology in the classroom, creating measurable improvements in student engagement.</p>
+            <span class="achievement-tag">💻 Digital</span>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-year">2020</span>
+            <h3>Mentorship Program Founder</h3>
+            <p class="timeline-org">Greenfield Secondary College</p>
+            <p>Established a peer mentorship program connecting senior and junior students, improving wellbeing scores across the school.</p>
+            <span class="achievement-tag">🤝 Leadership</span>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-year">2017</span>
+            <h3>Graduate Teacher of Distinction</h3>
+            <p class="timeline-org">University of Melbourne</p>
+            <p>Graduated with distinction and was awarded for exceptional classroom practice during teacher training placements.</p>
+            <span class="achievement-tag">🎓 Academic</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section class="section" id="contact">
+    <div class="container">
+      <h2 class="section-title">Get in <span>Touch</span></h2>
+      <p class="section-subtitle">I'd love to connect with fellow educators, parents, or organisations.</p>
+      <div class="contact-grid">
+        <div class="contact-info">
+          <div class="contact-item">
+            <span class="contact-icon">📧</span>
+            <div>
+              <h4>Email</h4>
+              <p>john@example.com</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <span class="contact-icon">📍</span>
+            <div>
+              <h4>Location</h4>
+              <p>Melbourne, Victoria, Australia</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <span class="contact-icon">🏫</span>
+            <div>
+              <h4>School</h4>
+              <p>Greenfield Secondary College</p>
+            </div>
+          </div>
+        </div>
+        <form class="contact-form" id="contactForm">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Your name" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="your@email.com" required />
+          </div>
+          <div class="form-group">
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" name="subject" placeholder="Subject" required />
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Your message..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-full">Send Message</button>
+          <p class="form-note" id="formNote"></p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2026 Nandini Chavan. All rights reserved.</p>
+      <p class="footer-sub">Secondary Teacher | Melbourne, Australia</p>
+    </div>
+  </footer>
+
+  <a href="#home" class="back-to-top" id="backToTop" aria-label="Back to top">↑</a>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
