@@ -569,6 +569,12 @@ h1, h2, h3, h4 { font-weight: 700; line-height: 1.2; }
 
 .photo-card:hover .cert-photo { transform: rotate(90deg) scale(1.06); }
 
+.cert-photo-rotate {
+  transform: rotate(-90deg) !important;
+}
+
+.photo-card:hover .cert-photo-rotate { transform: rotate(-90deg) scale(1.06) !important; }
+
 .cert-img-overlay {
   position: absolute;
   inset: 0;
