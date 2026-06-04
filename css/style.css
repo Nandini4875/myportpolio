@@ -547,7 +547,7 @@ h1, h2, h3, h4 { font-weight: 700; line-height: 1.2; }
 .cert-img-wrap {
   position: relative;
   width: 100%;
-  aspect-ratio: 16/10;
+  aspect-ratio: 3/4;
   border-radius: 10px;
   overflow: hidden;
   margin-bottom: 16px;
@@ -555,14 +555,19 @@ h1, h2, h3, h4 { font-weight: 700; line-height: 1.2; }
 }
 
 .cert-photo {
-  width: 100%;
-  height: 100%;
+  position: absolute;
+  width: 133%;
+  height: 75%;
+  top: 12.5%;
+  left: -16.5%;
   object-fit: cover;
   transition: transform 0.4s ease;
   image-orientation: from-image;
+  transform: rotate(90deg);
+  transform-origin: center;
 }
 
-.photo-card:hover .cert-photo { transform: scale(1.06); }
+.photo-card:hover .cert-photo { transform: rotate(90deg) scale(1.06); }
 
 .cert-img-overlay {
   position: absolute;
