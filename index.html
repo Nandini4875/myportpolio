@@ -19,6 +19,7 @@
         <li><a href="#about" class="nav-link">About</a></li>
         <li><a href="#skills" class="nav-link">Skills</a></li>
         <li><a href="#certificates" class="nav-link">Certificates</a></li>
+        <li><a href="#bed-assignments" class="nav-link">BEd Assignments</a></li>
         <li><a href="#achievements" class="nav-link">Achievements</a></li>
         <li><a href="#contact" class="nav-link">Contact</a></li>
       </ul>
@@ -37,10 +38,12 @@
       <p class="hero-tagline">Inspiring the next generation through passionate, evidence-based education.</p>
       <div class="hero-cta">
         <a href="#certificates" class="btn btn-primary">View Certificates</a>
-        <a href="#contact" class="btn btn-outline">Get in Touch</a>
+        <a href="#contact" class="btn btn-outline">Get In Touch</a>
       </div>
     </div>
     <div class="hero-avatar">
+      <div class="hero-orb hero-orb-1"></div>
+      <div class="hero-orb hero-orb-2"></div>
       <div class="avatar-placeholder">
         <span>NC</span>
       </div>
@@ -133,45 +136,14 @@
       <h2 class="section-title">Certificates &amp; <span>Qualifications</span></h2>
       <p class="section-subtitle">Formal qualifications and professional development certifications.</p>
 
-      <!-- Lock / Unlock bar -->
-      <div class="cert-lock-bar">
-        <div class="cert-lock-status" id="certLockStatus">
-          <span class="lock-icon">🔒</span>
-          <span id="lockStatusText">Certificates are hidden</span>
-        </div>
-        <button class="btn btn-outline lock-toggle-btn" id="lockToggleBtn" onclick="handleLockToggle()">
-          🔓 Unlock to View
-        </button>
-      </div>
-
-      <!-- PIN Modal -->
-      <div class="pin-modal" id="pinModal">
-        <div class="pin-box">
-          <div class="pin-icon">🔐</div>
-          <h3>Enter PIN to unlock</h3>
-          <p>Certificates are protected. Enter your PIN to view them.</p>
-          <div class="pin-inputs" id="pinInputs">
-            <input type="password" class="pin-digit" maxlength="1" inputmode="numeric" />
-            <input type="password" class="pin-digit" maxlength="1" inputmode="numeric" />
-            <input type="password" class="pin-digit" maxlength="1" inputmode="numeric" />
-            <input type="password" class="pin-digit" maxlength="1" inputmode="numeric" />
-          </div>
-          <p class="pin-error" id="pinError"></p>
-          <div class="pin-actions">
-            <button class="btn btn-primary" onclick="verifyPin()">Unlock</button>
-            <button class="btn btn-outline" onclick="closePinModal()">Cancel</button>
-          </div>
-        </div>
-      </div>
-
-      <div class="filter-bar" id="certFilterBar" style="display:none">
+      <div class="filter-bar" id="certFilterBar">
         <button class="filter-btn active" data-filter="all">All</button>
         <button class="filter-btn" data-filter="science">Science</button>
         <button class="filter-btn" data-filter="mathematics">Mathematics</button>
         <button class="filter-btn" data-filter="edtech">EdTech</button>
       </div>
 
-      <div class="cert-grid cert-grid-locked" id="certGrid">
+      <div class="cert-grid" id="certGrid">
 
         <div class="cert-card photo-card" data-category="science" onclick="openLightbox('photots/f6.png', 'Stamens &amp; Pistil', 'Science Teaching Resource', '2026')">
           <div class="cert-badge science">SCIENCE</div>
@@ -234,6 +206,127 @@
       </div>
     </div>
   </div>
+
+  <!-- ===== BED ASSIGNMENTS ===== -->
+  <section class="section section-alt" id="bed-assignments">
+    <div class="container">
+      <h2 class="section-title">BEd <span>Assignments</span></h2>
+      <p class="section-subtitle">Bachelor of Education assignment submissions and coursework.</p>
+      <div class="pdf-grid-scroll">
+      <div class="pdf-grid">
+
+        <a class="pdf-card" href="pdf/203 iks answers.pdf" target="_blank" rel="noopener">
+          <div class="pdf-icon-wrap">📄</div>
+          <div class="pdf-info">
+            <h3>Assignment 1</h3>
+            <p class="pdf-subject">IKS – 203</p>
+            <span class="pdf-tag">Open PDF</span>
+          </div>
+        </a>
+
+        <a class="pdf-card" href="pdf/203 iks answers.pdf" target="_blank" rel="noopener">
+          <div class="pdf-icon-wrap">📄</div>
+          <div class="pdf-info">
+            <h3>Assignment 2</h3>
+            <p class="pdf-subject">IKS – 203</p>
+            <span class="pdf-tag">Open PDF</span>
+          </div>
+        </a>
+
+        <a class="pdf-card" href="pdf/203 iks answers.pdf" target="_blank" rel="noopener">
+          <div class="pdf-icon-wrap">📄</div>
+          <div class="pdf-info">
+            <h3>Assignment 3</h3>
+            <p class="pdf-subject">IKS – 203</p>
+            <span class="pdf-tag">Open PDF</span>
+          </div>
+        </a>
+
+        <a class="pdf-card" href="pdf/203 iks answers.pdf" target="_blank" rel="noopener">
+          <div class="pdf-icon-wrap">📄</div>
+          <div class="pdf-info">
+            <h3>Assignment 4</h3>
+            <p class="pdf-subject">IKS – 203</p>
+            <span class="pdf-tag">Open PDF</span>
+          </div>
+        </a>
+
+        <a class="pdf-card" href="pdf/203 iks answers.pdf" target="_blank" rel="noopener">
+          <div class="pdf-icon-wrap">📄</div>
+          <div class="pdf-info">
+            <h3>Assignment 5</h3>
+            <p class="pdf-subject">IKS – 203</p>
+            <span class="pdf-tag">Open PDF</span>
+          </div>
+        </a>
+
+        <a class="pdf-card" href="pdf/203 iks answers.pdf" target="_blank" rel="noopener">
+          <div class="pdf-icon-wrap">📄</div>
+          <div class="pdf-info">
+            <h3>Assignment 6</h3>
+            <p class="pdf-subject">IKS – 203</p>
+            <span class="pdf-tag">Open PDF</span>
+          </div>
+        </a>
+
+        <a class="pdf-card" href="pdf/203 iks answers.pdf" target="_blank" rel="noopener">
+          <div class="pdf-icon-wrap">📄</div>
+          <div class="pdf-info">
+            <h3>Assignment 7</h3>
+            <p class="pdf-subject">IKS – 203</p>
+            <span class="pdf-tag">Open PDF</span>
+          </div>
+        </a>
+
+        <a class="pdf-card" href="pdf/203 iks answers.pdf" target="_blank" rel="noopener">
+          <div class="pdf-icon-wrap">📄</div>
+          <div class="pdf-info">
+            <h3>Assignment 8</h3>
+            <p class="pdf-subject">IKS – 203</p>
+            <span class="pdf-tag">Open PDF</span>
+          </div>
+        </a>
+
+        <a class="pdf-card" href="pdf/203 iks answers.pdf" target="_blank" rel="noopener">
+          <div class="pdf-icon-wrap">📄</div>
+          <div class="pdf-info">
+            <h3>Assignment 9</h3>
+            <p class="pdf-subject">IKS – 203</p>
+            <span class="pdf-tag">Open PDF</span>
+          </div>
+        </a>
+
+        <a class="pdf-card" href="pdf/203 iks answers.pdf" target="_blank" rel="noopener">
+          <div class="pdf-icon-wrap">📄</div>
+          <div class="pdf-info">
+            <h3>Assignment 10</h3>
+            <p class="pdf-subject">IKS – 203</p>
+            <span class="pdf-tag">Open PDF</span>
+          </div>
+        </a>
+
+        <a class="pdf-card" href="pdf/203 iks answers.pdf" target="_blank" rel="noopener">
+          <div class="pdf-icon-wrap">📄</div>
+          <div class="pdf-info">
+            <h3>Assignment 11</h3>
+            <p class="pdf-subject">IKS – 203</p>
+            <span class="pdf-tag">Open PDF</span>
+          </div>
+        </a>
+
+        <a class="pdf-card" href="pdf/203 iks answers.pdf" target="_blank" rel="noopener">
+          <div class="pdf-icon-wrap">📄</div>
+          <div class="pdf-info">
+            <h3>Assignment 12</h3>
+            <p class="pdf-subject">IKS – 203</p>
+            <span class="pdf-tag">Open PDF</span>
+          </div>
+        </a>
+
+      </div><!-- end pdf-grid -->
+      </div><!-- end pdf-grid-scroll -->
+    </div>
+  </section>
 
   <!-- ===== ACHIEVEMENTS ===== -->
   <section class="section section-alt" id="achievements">
@@ -341,26 +434,7 @@
             </div>
           </div>
         </div>
-        <form class="contact-form" id="contactForm">
-          <div class="form-group">
-            <label for="name">Name</label>
-            <input type="text" id="name" name="name" placeholder="Your name" required />
-          </div>
-          <div class="form-group">
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" placeholder="your@email.com" required />
-          </div>
-          <div class="form-group">
-            <label for="subject">Subject</label>
-            <input type="text" id="subject" name="subject" placeholder="Subject" required />
-          </div>
-          <div class="form-group">
-            <label for="message">Message</label>
-            <textarea id="message" name="message" rows="5" placeholder="Your message..." required></textarea>
-          </div>
-          <button type="submit" class="btn btn-primary btn-full">Send Message</button>
-          <p class="form-note" id="formNote"></p>
-        </form>
+
       </div>
     </div>
   </section>
